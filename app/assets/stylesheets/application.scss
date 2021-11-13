@@ -14,9 +14,22 @@
 @import "pages/index";
 
 body {
-background-color: black;
+  background-color: white;
+}
+
+.lights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    height: 157px;
+  }
+}
+
+.right_lights {
+  width: 280px;
 }
 
 h3 {
-  color: lightgray;
+  color: rgb(39, 15, 15);
 }
