@@ -17,14 +17,20 @@ body {
   background-color: white;
 }
 
-.lights {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  img {
-    height: 157px;
-  }
+.background-body-img {
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(asset_path('lights.jpg'));
+  background-repeat: no-repeat;
+  background-position: left top 20.9%;
 }
+// .lights {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   img {
+//     height: 157px;
+//     position: relative;
+//   }
+// }
 
 .right_lights {
   width: 280px;
