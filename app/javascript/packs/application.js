@@ -8,11 +8,13 @@ import Turbolinks from "turbolinks";
 import * as ActiveStorage from "@rails/activestorage";
 import "channels";
 import 'bootstrap';
-
+import { typeWriter } from './plugins/init_typeWriter';
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-
+document.addEventListener('turbolinks:load', () => {
+  typeWriter();
+})
 
