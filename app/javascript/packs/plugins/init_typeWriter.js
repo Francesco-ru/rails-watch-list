@@ -1,5 +1,5 @@
 var i = 0;
-var speed = 100;
+var speed = 50;
 var txt = ""; /* The speed/duration of the effect in milliseconds */
 function typeWriter() {
   const quotes = ["“May the Force be with you” (Star Wars, 1977)",
@@ -25,10 +25,12 @@ function typeWriter() {
     i++;
     setTimeout(typeWriter, speed);
   } else {
-    document.getElementById("demo").innerHTML = "";
-    i = 0;
-    txt = quotes[Math.floor(Math.random() * quotes.length)]; /* The text */
-    typeWriter();
+    setTimeout(() => {
+      document.getElementById("demo").innerHTML = "";
+      i = 0;
+      txt = quotes[Math.floor(Math.random() * quotes.length)]; /* The text */
+      typeWriter();
+    }, 2000);
   }
 }
 
